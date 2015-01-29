@@ -38,6 +38,7 @@
 		37D52A131A7ABBEC00E6FE97 /* scoutTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scoutTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D52A181A7ABBEC00E6FE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37D52A191A7ABBEC00E6FE97 /* scoutTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoutTrackerTests.swift; sourceTree = "<group>"; };
+		37D52A231A7ABCC100E6FE97 /* scoutTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = scoutTracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		37D529FE1A7ABBEC00E6FE97 /* scoutTracker */ = {
 			isa = PBXGroup;
 			children = (
+				37D52A231A7ABCC100E6FE97 /* scoutTracker.entitlements */,
 				37D52A011A7ABBEC00E6FE97 /* AppDelegate.swift */,
 				37D52A031A7ABBEC00E6FE97 /* FirstViewController.swift */,
 				37D52A051A7ABBEC00E6FE97 /* SecondViewController.swift */,
@@ -164,6 +166,15 @@
 				TargetAttributes = {
 					37D529FB1A7ABBEC00E6FE97 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4PCMAPG3W2;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					37D52A121A7ABBEC00E6FE97 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -342,9 +353,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = scoutTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +366,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = scoutTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
